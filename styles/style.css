@@ -1,0 +1,54 @@
+:root {
+  --background: #16161a;
+  --background-two: #242629;
+  --paragraph: #94a1b2;
+  --headline: #fffffe;
+  --button: #7f5af0;
+  --button-text: #fffffe;
+  --stroke: #010101;
+  --main: #fffffe;
+  --highlight: #7f5af0;
+  --secondary: #72757e;
+  --tertiary: #2cb67d;
+}
+
+body {
+  font-family: "Lora", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+
+.contact {
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.contact__container {
+  margin:  60px;
+}
+
+.contact__title {
+  color: var(--headline);
+  text-transform: uppercase;
+}
+
+.contact__subtitle {
+  color: var(--paragraph);
+}
+
+.contact__formMessage {
+  color: --
+}
+
+.contact__formInfo {
+
+}
