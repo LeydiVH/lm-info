@@ -1,0 +1,134 @@
+@import './style.css';
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background-image: url(../assets/images/profile.png);
+  background-image: url(../assets/images/profile-2.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-size: cover;
+  background-color: #242629ef;
+  position: relative;
+  top: -3.5rem;
+  z-index: -1;
+}
+
+.hero__container {
+  backdrop-filter: grayscale(1);
+  background-color: #242629cf;
+}
+
+.hero__wrapper {
+  position: relative;
+  padding: 2rem;
+  /* backdrop-filter: blur(10px); */
+  /* backdrop-filter: grayscale(1); */
+}
+
+.hero__firstName,
+.hero__lastName {
+  color: var(--headline);
+  text-transform: uppercase;
+  font: var(--big-title-desktop);
+}
+
+.hero__firstName {
+  position: relative;
+  left: 2rem;
+  margin: 0;
+}
+
+.hero__lastName {
+  position: relative;
+  bottom: 2rem;
+}
+
+.hero__firstName span {
+  color: var(--highlight);
+}
+
+.hero__lastName span {
+  color: var(--tertiary);
+}
+
+.hero__subtitle {
+  color: var(--paragraph);
+  text-transform: uppercase;
+  font: var(--big-subtitle-desktop);
+  position: relative;
+  left: 4rem;
+  bottom: 3rem;
+  letter-spacing: .125rem;
+}
+
+
+/* @media (min-width: 1200px) {} */
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .hero__firstName,
+  .hero__lastName {
+    font: var(--big-title-tablet);
+  }
+
+  .hero__subtitle {
+    font: var(--big-subtitle-tablet);
+    left: 2rem;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .hero__container {
+    justify-content: center !important;
+  }
+
+  .hero__wrapper {
+    padding: 2rem;
+    background-color: var(--background-two);
+  }
+
+  .hero__content {
+    height: 220px;
+  }
+
+  .hero__firstName,
+  .hero__lastName {
+    font: var(--big-title-tablet);
+  }
+
+  .hero__subtitle {
+    font: var(--big-subtitle-tablet);
+    left: 2rem;
+  }
+
+}
+
+
+@media screen and (max-width: 767.98px) {
+  .hero__container {
+    justify-content: center !important;
+  }
+
+  .hero__wrapper {
+    padding: 2rem;
+    background-color: var(--background-two);
+  }
+
+  .hero__content {
+    height: 170px;
+  }
+
+  .hero__firstName,
+  .hero__lastName {
+    font: var(--big-title-mobile);
+  }
+
+  .hero__subtitle {
+    font: var(--big-subtitle-mobile);
+    left: 2rem;
+  }
+
+}

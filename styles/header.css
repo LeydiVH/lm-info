@@ -1,0 +1,48 @@
+@import './style.css';
+
+/* Header */
+.header {
+  height: 3.5rem;
+  background-color: transparent;
+}
+
+/* Nav */
+.nav__container {
+  gap: 1.5rem;
+}
+
+.nav__container .nav__item .nav__link {
+  color: var(--headline);
+  font: var(--nav-desktop);
+  text-transform: uppercase;
+  /* text-decoration: dashed; */
+}
+
+.nav__link::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  margin-top: .25rem;
+  width: 2rem;
+  border: 1px dashed var(--headline);
+}
+
+.nav__item:hover {
+  color: var(--tertiary);
+}
+
+.nav__container .nav__item .nav__link:hover {
+  color: var(--tertiary);
+}
+
+.nav__icon {
+  font-size: var(--nav-icon);
+}
+.nav__icon:hover {
+  color: var(--tertiary);
+}
+
+.nav__link::after:hover {
+  content: '';
+  border: 1px dashed var(--tertiary);
+}
