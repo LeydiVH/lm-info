@@ -28,47 +28,61 @@
 
 <body class="container-fluid">
   <header class="row header">
-    <div class="col-12">
-      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent">
-        <a class="navbar-brand" href="#"><i class="fa-solid fa-bars"></i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="col-12 px-0">
+      <nav id="navbarContainer" class="navbar navbar-expand-md navbar-dark px-0">
+        <a class="navbar-brand ml-4" href="#">
+          <!-- <i class="fa-solid fa-bars"></i> -->
+          <button id="buttonNavbarDesktop" class="d-none d-md-block navbar-toggler navbar__toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </a>
+        <button  id="buttonNavbarMobile" class="navbar-toggler navbar__toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse mr-4 nav__invisible nav__collapsing" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto nav__container d-flex justify-content-center align-items-center">
             <li class="nav-item nav__item">
               <a class="nav-link nav__link d-flex flex-column justify-content-center align-items-center" href="#">
                 <i class="nav__icon fa-solid fa-house-chimney d-block m-2"></i>
-                Home
+                <span class="nav__text">
+                  Home
+                </span>
               </a>
             </li>
             <li class="nav-item nav__item">
               <a class="nav-link nav__link d-flex flex-column justify-content-center align-items-center"
                 href="#information">
                 <i class="nav__icon fa-solid fa-quote-left d-block m-2"></i>
-                Sobre mí
+                <span class="nav__text">
+                  Sobre mí
+                </span>
               </a>
             </li>
             <li class="nav-item nav__item">
               <a class="nav-link nav__link d-flex flex-column justify-content-center align-items-center" href="#family">
                 <!-- <i class="fa-solid fa-family-pants"></i> -->
                 <i class="nav__icon fas fa-users d-block m-2"></i>
-                Familia
+                <span class="nav__text">
+                  Familia
+                </span>
               </a>
             </li>
             <li class="nav-item nav__item">
               <a class="nav-link nav__link d-flex flex-column justify-content-center align-items-center" href="#friend">
                 <i class="nav__icon fa-solid fa-user-group d-block m-2"></i>
-                Amigos
+                <span class="nav__text">
+                  Amigos
+                </span>
               </a>
             </li>
             <li class="nav-item  nav__item">
               <a class="nav-link nav__link d-flex flex-column justify-content-center align-items-center"
                 href="#contact">
                 <i class="nav__icon fa-solid fa-envelope d-block m-2"></i>
-                Contacto
+                <span class="nav__text">
+                  Contacto
+                </span>
               </a>
             </li>
           </ul>
@@ -90,446 +104,453 @@
       </div>
     </section>
 
-    <section id="information" class="row d-flex justify-content-center">
-      <div class="col-10">
-        <div class="row">
-          <div class="col-12 col-md-5 col-xl-6">
-            <div class="information__imageContainer">
-              <img class="information__image" src="./assets/images/profile.png" alt="" />
-            </div>
-          </div>
-          <div class="col-12 col-md-7 col-xl-6">
-            <h3 class="information__title">Hola,</h3>
-            <h5 class="information__subtitle">Soy Leydi Velazco</h5>
-            <p class="information__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              error possimus adipisci accusantium reprehenderit distinctio qui
-              ut harum. At porro autem saepe dolores tempora odio quia
-              praesentium quo blanditiis perferendis?
-            </p>
-            <p class="information__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              eligendi quos nisi ex at dicta sapiente vitae ipsum asperiores
-              ducimus. Voluptatibus corporis voluptates iusto sit ad sint
-              sapiente laudantium mollitia.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <h3 class="education__title">Educación</h3>
-            <div class="row">
-              <div class="col-4 col-md-3">
-                <div class="education__imageContainer">
-                  <img class="education__image" src="./assets/images/cousin-3.jpg" alt="">
+    <div class="general__container">
+          <section id="information" class="row d-flex justify-content-center">
+            <div class="col-10">
+              <div class="row">
+                <div class="col-12 col-md-5 col-xl-6">
+                  <div class="information__imageContainer">
+                    <img class="information__image" src="./assets/images/profile.png" alt="" />
+                  </div>
+                </div>
+                <div class="col-12 col-md-7 col-xl-6">
+                  <h3 class="information__title">Hola,</h3>
+                  <h5 class="information__subtitle">Soy Leydi Velazco</h5>
+                  <p class="information__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                    error possimus adipisci accusantium reprehenderit distinctio qui
+                    ut harum. At porro autem saepe dolores tempora odio quia
+                    praesentium quo blanditiis perferendis?
+                  </p>
+                  <p class="information__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                    eligendi quos nisi ex at dicta sapiente vitae ipsum asperiores
+                    ducimus. Voluptatibus corporis voluptates iusto sit ad sint
+                    sapiente laudantium mollitia.
+                  </p>
                 </div>
               </div>
-              <div class="col-5 col-md-6">
-                <h5 class="education__subtitle">Titulo centro educativo</h5>
-                <p class="education__location">Lima - Peru</p>
-              </div>
-              <div class="col-3">
-                <h5 class="education__period">2020 - 2022</h5>
-              </div>
-            </div>
-            <hr class="education__divider">
-            <div class="row">
-              <div class="col-4 col-md-3">
-                <div class="education__imageContainer">
-                  <img class="education__image" src="./assets/images/cousin-3.jpg" alt="">
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="education__title">Educación</h3>
+                  <div class="row">
+                    <div class="col-12 col-md-3">
+                      <div class="education__imageContainer">
+                        <img class="education__image" src="./assets/images/profile-3.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <h5 class="education__subtitle">Titulo centro educativo</h5>
+                      <p class="education__location">Lima - Peru</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <h5 class="education__period">2020 - 2022</h5>
+                    </div>
+                  </div>
+                  <hr class="education__divider">
+                  <div class="row">
+                    <div class="col-12 col-md-3">
+                      <div class="education__imageContainer">
+                        <img class="education__image" src="./assets/images/profile-3.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <h5 class="education__subtitle">Titulo centro educativo</h5>
+                      <p class="education__location">Lima - Peru</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <h5 class="education__period">2020 - 2022</h5>
+                    </div>
+                  </div>
+                  <hr class="education__divider">
+                  <div class="row">
+                    <div class="col-12 col-md-3">
+                      <div class="education__imageContainer">
+                        <img class="education__image" src="./assets/images/profile-3.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <h5 class="education__subtitle">Titulo centro educativo</h5>
+                      <p class="education__location">Lima - Peru</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <h5 class="education__period">2020 - 2022</h5>
+                    </div>
+                  </div>
+                  <hr class="education__divider">
+      
                 </div>
               </div>
-              <div class="col-5 col-md-6">
-                <h5 class="education__subtitle">Titulo centro educativo</h5>
-                <p class="education__location">Lima - Peru</p>
-              </div>
-              <div class="col-3">
-                <h5 class="education__period">2020 - 2022</h5>
-              </div>
-            </div>
-            <hr class="education__divider">
-            <div class="row">
-              <div class="col-4 col-md-3">
-                <div class="education__imageContainer">
-                  <img class="education__image" src="./assets/images/cousin-3.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-5 col-md-6">
-                <h5 class="education__subtitle">Titulo centro educativo</h5>
-                <p class="education__location">Lima - Peru</p>
-              </div>
-              <div class="col-3">
-                <h5 class="education__period">2020 - 2022</h5>
-              </div>
-            </div>
-            <hr class="education__divider">
-
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12">
-            <h3 class="skills__title text-center">Mis habilidades</h3>
-            <div class="row mb-5">
-              <div class="col-12 col-md-6">
-                <p class="skills__description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Blanditiis illo saepe fugiat est deserunt eligendi dolorum eius, quidem corporis maiores tempore,
-                  reprehenderit ab in tempora quisquam animi dolores recusandae modi. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit.</p>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="col-12">
-                      <div class="progress-wrap">
-                        <h3 class="progress__title skills__name">Add skill</h3>
-                        <div class="progress progress__container">
-                          <div class="progress-bar progress__bar progress__background" role="progressbar" aria-valuenow="75"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-                            <span>75%</span>
+      
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="skills__title text-center">Mis habilidades</h3>
+                  <div class="row mb-5">
+                    <div class="col-12 col-md-6">
+                      <p class="skills__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Blanditiis illo saepe fugiat est deserunt eligendi dolorum eius, quidem corporis maiores tempore,
+                        reprehenderit ab in tempora quisquam animi dolores recusandae modi. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="progress-wrap">
+                            <h3 class="progress__title skills__name">Add skill</h3>
+                            <div class="progress progress__container">
+                              <div class="progress-bar progress__bar progress__background" role="progressbar" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                                <span>75%</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="col-12">
+                          <div class="progress-wrap">
+                            <h3 class="progress__title skills__name">Add skill</h3>
+                            <div class="progress progress__container">
+                              <div class="progress-bar progress__bar progress__background" role="progressbar" aria-valuenow="85"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                <span>80%</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="col-12">
+                          <div class="progress-wrap progress__wrapper">
+                            <h3 class="progress__title skills__name">Add skill</h3>
+                            <div class="progress progress__container">
+                              <div class="progress-bar progress__bar progress__background" role="progressbar" aria-valuenow="95"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                                <span>95%</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="col-12">
+                          <div class="progress-wrap">
+                            <h3 class="progress__title skills__name">Add skill</h3>
+                            <div class="progress progress__container">
+                              <div class="progress-bar progress__bar progress__background" role="progressbar" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                <span>90%</span>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-      
-                    <div class="col-12">
-                      <div class="progress-wrap">
-                        <h3 class="progress__title skills__name">Add skill</h3>
-                        <div class="progress progress__container">
-                          <div class="progress-bar progress__bar progress__background" role="progressbar" aria-valuenow="85"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
-                            <span>80%</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-      
-                    <div class="col-12">
-                      <div class="progress-wrap progress__wrapper">
-                        <h3 class="progress__title skills__name">Add skill</h3>
-                        <div class="progress progress__container">
-                          <div class="progress-bar progress__bar progress__background" role="progressbar" aria-valuenow="95"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
-                            <span>95%</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-      
-                    <div class="col-12">
-                      <div class="progress-wrap">
-                        <h3 class="progress__title skills__name">Add skill</h3>
-                        <div class="progress progress__container">
-                          <div class="progress-bar progress__bar progress__background" role="progressbar" aria-valuenow="90"
-                            aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                            <span>90%</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            
+            
                   </div>
                 </div>
               </div>
       
-      
+      <!-- 
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="skills__title text-center">Mis habilidades</h3>
+                  <div class="row mb-5">
+                    <div class="col-12 col-md-6">
+                      <p class="skills__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Blanditiis illo saepe fugiat est deserunt eligendi dolorum eius, quidem corporis maiores tempore,
+                        reprehenderit ab in tempora quisquam animi dolores recusandae modi. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <form action="" class="w-100">
+                        <div class="form-group">
+                          <label class="skills__name" for="skillOne">Skills</label>
+                          <input type="range" class="form-control-range" value="90" id="skillOne">
+                        </div>
+                        <div class="form-group">
+                          <label class="skills__name" for="skillTwo">Skills</label>
+                          <input type="range" class="form-control-range" value="80" id="skillTwo">
+                        </div>
+                        <div class="form-group">
+                          <label class="skills__name" for="skillThree">Skills</label>
+                          <input type="range" class="form-control-range" value="100" id="skillThree">
+                        </div>
+                        <div class="form-group">
+                          <label class="skills__name" for="skillFour">Skills</label>
+                          <input type="range" class="form-control-range" value="50" id="skillFour">
+                        </div>
+                        <div class="form-group">
+                          <label class="skills__name" for="skillFive">Skills</label>
+                          <input type="range" class="form-control-range" value="20" id="skillFive">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
             </div>
-          </div>
-        </div>
-
-<!-- 
-        <div class="row">
-          <div class="col-12">
-            <h3 class="skills__title text-center">Mis habilidades</h3>
-            <div class="row mb-5">
-              <div class="col-12 col-md-6">
-                <p class="skills__description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Blanditiis illo saepe fugiat est deserunt eligendi dolorum eius, quidem corporis maiores tempore,
-                  reprehenderit ab in tempora quisquam animi dolores recusandae modi. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit.</p>
-              </div>
-              <div class="col-12 col-md-6">
-                <form action="" class="w-100">
-                  <div class="form-group">
-                    <label class="skills__name" for="skillOne">Skills</label>
-                    <input type="range" class="form-control-range" value="90" id="skillOne">
-                  </div>
-                  <div class="form-group">
-                    <label class="skills__name" for="skillTwo">Skills</label>
-                    <input type="range" class="form-control-range" value="80" id="skillTwo">
-                  </div>
-                  <div class="form-group">
-                    <label class="skills__name" for="skillThree">Skills</label>
-                    <input type="range" class="form-control-range" value="100" id="skillThree">
-                  </div>
-                  <div class="form-group">
-                    <label class="skills__name" for="skillFour">Skills</label>
-                    <input type="range" class="form-control-range" value="50" id="skillFour">
-                  </div>
-                  <div class="form-group">
-                    <label class="skills__name" for="skillFive">Skills</label>
-                    <input type="range" class="form-control-range" value="20" id="skillFive">
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div> -->
-      </div>
-    </section>
-
-    <section class="row family" id="family">
+          </section>
+    </div>
+    <div class="family__container row">
       <div class="col-12">
-        <h3 class="family__title text-center">Familia</h3>
-
-        <p class="family__description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, id! Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. Temporibus ab tempore debitis harum eos aspernatur expedita architecto, hic deleniti
-          dolorum, consequuntur blanditiis beatae quam, a voluptatibus. Explicabo autem sapiente eveniet temporibus
-          quae, porro alias quibusdam quas magni ducimus maiores non vel qui unde, minima nam consequuntur, beatae iure.
-        </p>
-
-        <ul class="nav nav-tabs justify-content-center mt-3 mb-3">
-          <li class="nav-item">
-            <a class="nav-link family__link" href="#">Todos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link family__link" href="#">Padres</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link family__link" href="#">Hermanos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link family__link" href="#">Primos(as)</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link family__link" href="#">Abuelos(as)</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link family__link" href="#">Tíos(as)</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link family__link" href="#">Sobrinos(as)</a>
-          </li>
-        </ul>
-
-        <div class="family__gallery">
-          <!-- <div class="family__picture family__picture--one"></div>
-            <div class="family__picture family__picture--two"></div>
-            <div class="family__picture family__picture--three"></div>
-            <div class="family__picture family__picture--four"></div>
-            <div class="family__picture family__picture--five"></div>
-            <div class="family__picture family__picture--six"></div>
-            <div class="family__picture family__picture--seven"></div>
-            <div class="family__picture family__picture--eight"></div> -->
-          <div class="family__picture family__picture--one">
-            <img class="family__image" src="./assets/images/aunt-1.jpg" alt="Person's aunt" width="100" height="" />
-          </div>
-          <div class="family__picture family__picture--two">
-            <img class="family__image" src="./assets/images/aunt-2.jpg" alt="Person's aunt" width="100" height="" />
-          </div>
-          <div class="family__picture family__picture--three">
-            <img class="family__image" src="./assets/images/aunt-3.jpg" alt="Person's aunt" width="100" height="" />
-          </div>
-          <div class="family__picture family__picture--four">
-            <img class="family__image" src="./assets/images/aunt-4.jpg" alt="Person's aunt" width="100" height="" />
-          </div>
-          <div class="family__picture family__picture--five">
-            <img class="family__image" src="./assets/images/aunt-5.jpg" alt="Person's aunt" width="100" height="" />
-          </div>
-          <div class="family__picture family__picture--six">
-            <img class="family__image" src="./assets/images/aunt-6.jpg" alt="Person's aunt" width="100" height="" />
-          </div>
-          <div class="family__picture family__picture--seven">
-            <img class="family__image" src="./assets/images/aunt-7.jpg" alt="Person's aunt" width="100" height="" />
-          </div>
-          <div class="family__picture family__picture--eight">
-            <img class="family__image" src="./assets/images/aunt-1.jpg" alt="Person's aunt" width="100" height="" />
-          </div>
+        <div class="general__container">
+          <section class="row justify-content-center family" id="family">
+            <div class="col-10">
+              <h3 class="family__title text-center">Familia</h3>
+      
+              <p class="family__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, id! Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Temporibus ab tempore debitis harum eos aspernatur expedita architecto, hic deleniti
+                dolorum, consequuntur blanditiis beatae quam, a voluptatibus. Explicabo autem sapiente eveniet temporibus
+                quae, porro alias quibusdam quas magni ducimus maiores non vel qui unde, minima nam consequuntur, beatae iure.
+              </p>
+      
+              <ul class="nav nav-tabs family__nav justify-content-center mt-3 mb-3">
+                <li class="nav-item">
+                  <a class="nav-link family__link" href="#">Todos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link family__link" href="#">Padres</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link family__link" href="#">Hermanos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link family__link" href="#">Primos(as)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link family__link" href="#">Abuelos(as)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link family__link" href="#">Tíos(as)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link family__link" href="#">Sobrinos(as)</a>
+                </li>
+              </ul>
+      
+              <div class="family__gallery">
+                <div class="family__picture family__picture--one">
+                  <img class="family__image" src="./assets/images/aunt-1.jpg" alt="Person's aunt" width="100" height="" />
+                </div>
+                <div class="family__picture family__picture--two">
+                  <img class="family__image" src="./assets/images/aunt-2.jpg" alt="Person's aunt" width="100" height="" />
+                </div>
+                <div class="family__picture family__picture--three">
+                  <img class="family__image" src="./assets/images/aunt-3.jpg" alt="Person's aunt" width="100" height="" />
+                </div>
+                <div class="family__picture family__picture--four">
+                  <img class="family__image" src="./assets/images/aunt-4.jpg" alt="Person's aunt" width="100" height="" />
+                </div>
+                <div class="family__picture family__picture--five">
+                  <img class="family__image" src="./assets/images/aunt-5.jpg" alt="Person's aunt" width="100" height="" />
+                </div>
+                <div class="family__picture family__picture--six">
+                  <img class="family__image" src="./assets/images/aunt-6.jpg" alt="Person's aunt" width="100" height="" />
+                </div>
+                <div class="family__picture family__picture--seven">
+                  <img class="family__image" src="./assets/images/aunt-7.jpg" alt="Person's aunt" width="100" height="" />
+                </div>
+                <div class="family__picture family__picture--eight">
+                  <img class="family__image" src="./assets/images/aunt-1.jpg" alt="Person's aunt" width="100" height="" />
+                </div>
+                <div class="family__picture family__picture--nine">
+                  <img class="family__image" src="./assets/images/aunt-4.jpg" alt="Person's aunt" width="100" height="" />
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
-
-    <section class="row friend" id="friend">
-      <div class="col-12">
-        <div class="row justify-content-center">
-          <div class="col-4">
-            <h3 class="friend__title text-center">Amigos</h3>
+    </div>
+    <div class="general__container">
+      <section class="row friend" id="friend">
+        <div class="col-12">
+          <div class="row justify-content-center">
+            <div class="col-4">
+              <h3 class="friend__title text-center">Amigos</h3>
+            </div>
           </div>
-        </div>
-        <div class="row d-flex justify-content-center">
-          <div class="col-10">
-            <p class="friend__description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
-              modi eveniet ut quia praesentium explicabo hic sit quam,
-              similique cum, expedita pariatur est eius, illo deserunt eos
-              harum. Fugiat, exercitationem. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit.
-            </p>
+          <div class="row d-flex justify-content-center">
+            <div class="col-10">
+              <p class="friend__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+                modi eveniet ut quia praesentium explicabo hic sit quam,
+                similique cum, expedita pariatur est eius, illo deserunt eos
+                harum. Fugiat, exercitationem. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-10">
-            <div class="row friend__gallery">
-              <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
-                <img class="friend__image" src="./assets/images/friend-1.jpg" alt="" />
-                <div class="friend__infoContainer">
-                  <p class="friend__name text-center">Nombre Amigo</p>
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="row friend__gallery mx-0">
+                <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
+                  <img class="friend__image" src="./assets/images/friend-1.jpg" alt="" />
+                  <div class="friend__infoContainer">
+                    <p class="friend__name text-center">Nombre Amigo</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
-                <img class="friend__image" src="./assets/images/friend-2.jpg" alt="" />
-                <div class="friend__infoContainer">
-                  <p class="friend__name text-center">Nombre Amigo</p>
+                <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
+                  <img class="friend__image" src="./assets/images/friend-2.jpg" alt="" />
+                  <div class="friend__infoContainer">
+                    <p class="friend__name text-center">Nombre Amigo</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
-                <img class="friend__image" src="./assets/images/friend-3.jpg" alt="" />
-                <div class="friend__infoContainer">
-                  <p class="friend__name text-center">Nombre Amigo</p>
+                <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
+                  <img class="friend__image" src="./assets/images/friend-3.jpg" alt="" />
+                  <div class="friend__infoContainer">
+                    <p class="friend__name text-center">Nombre Amigo</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
-                <img class="friend__image" src="./assets/images/friend-4.jpg" alt="" />
-                <div class="friend__infoContainer">
-                  <p class="friend__name text-center">Nombre Amigo</p>
+                <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
+                  <img class="friend__image" src="./assets/images/friend-4.jpg" alt="" />
+                  <div class="friend__infoContainer">
+                    <p class="friend__name text-center">Nombre Amigo</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
-                <img class="friend__image" src="./assets/images/friend-5.jpg" alt="" />
-                <div class="friend__infoContainer">
-                  <p class="friend__name text-center">Nombre Amigo</p>
+                <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
+                  <img class="friend__image" src="./assets/images/friend-5.jpg" alt="" />
+                  <div class="friend__infoContainer">
+                    <p class="friend__name text-center">Nombre Amigo</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
-                <img class="friend__image" src="./assets/images/friend-6.jpg" alt="" />
-                <div class="friend__infoContainer">
-                  <p class="friend__name text-center">Nombre Amigo</p>
+                <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
+                  <img class="friend__image" src="./assets/images/friend-6.jpg" alt="" />
+                  <div class="friend__infoContainer">
+                    <p class="friend__name text-center">Nombre Amigo</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
-                <img class="friend__image" src="./assets/images/friend-7.jpg" alt="" />
-                <div class="friend__infoContainer">
-                  <p class="friend__name text-center">Nombre Amigo</p>
+                <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
+                  <img class="friend__image" src="./assets/images/friend-7.jpg" alt="" />
+                  <div class="friend__infoContainer">
+                    <p class="friend__name text-center">Nombre Amigo</p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
-                <img class="friend__image" src="./assets/images/friend-8.jpg" alt="" />
-                <div class="friend__infoContainer">
-                  <p class="friend__name text-center">Nombre Amigo</p>
+                <div class="col-6 col-md-4 col-xl-3 friend__imageContainer">
+                  <img class="friend__image" src="./assets/images/friend-8.jpg" alt="" />
+                  <div class="friend__infoContainer">
+                    <p class="friend__name text-center">Nombre Amigo</p>
+                  </div>
                 </div>
-              </div>
-
-              <div class="d-none d-md-block d-xl-none col-6 col-md-4 col-xl-3 friend__imageContainer">
-                <img class="friend__image" src="./assets/images/friend-9.jpg" alt="" />
-                <div class="friend__infoContainer">
-                  <p class="friend__name text-center">Nombre Amigo</p>
+  
+                <div class="d-none d-md-block d-xl-none col-6 col-md-4 col-xl-3 friend__imageContainer">
+                  <img class="friend__image" src="./assets/images/friend-9.jpg" alt="" />
+                  <div class="friend__infoContainer">
+                    <p class="friend__name text-center">Nombre Amigo</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact row d-flex justify-content-center mb-4">
-      <div class="col-10">
-        <div class="row">
-          <div class="col-12 col-md-7 col-xl-6 pr-0 d-flex align-items-center justify-content-center">
-            <div class="contact__container">
-              <h1 class="contact__title">
-                ¡Conversemos! <br />
-                Cuéntame acerca de tu proyecto
-              </h1>
-              <h4 class="contact__subtitle">Crearemos algo juntos</h4>
+      </section>
+    </div>
+    <div class="general__container">
+      <section id="contact" class="contact row d-flex justify-content-center mb-4">
+        <div class="col-10">
+          <div class="row">
+            <div class="col-12 col-md-7 col-xl-6 d-flex align-items-center justify-content-center">
+              <div class="contact__container">
+                <h1 class="contact__title">
+                  ¡Conversemos! <br />
+                  Cuéntame acerca de tu proyecto
+                </h1>
+                <h4 class="contact__subtitle">Crearemos algo juntos</h4>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 col-xl-6">
+              <form class="contact__form" action="#">
+                <h4 class="contact__formMessage">Envíame un mensaje</h4>
+                <div class="form-group">
+                  <input class="form-control contact__formInput" type="text" placeholder="Tu nombre" />
+                </div>
+                <div class="form-group">
+                  <input class="form-control contact__formInput" type="email" placeholder="Correo electrónico" />
+                </div>
+                <div class="form-group">
+                  <input class="form-control contact__formInput" type="text" placeholder="Asunto" />
+                </div>
+                <p class="contact__formInfo">Cuéntame más acerca de tu proyecto</p>
+                <div class="form-group">
+                  <textarea class="form-control contact__formInput" name="" id="" cols="30" rows="10"
+                    placeholder="Escribe tu respuesta aquí"></textarea>
+                </div>
+                <button class="btn contact__button">ENVIAR MENSAJE</button>
+              </form>
             </div>
           </div>
-          <div class="col-12 col-md-5 col-xl-6">
-            <form class="contact__form" action="#">
-              <h4 class="contact__formMessage">Envíame un mensaje</h4>
-              <div class="form-group">
-                <input class="form-control contact__formInput" type="text" placeholder="Tu nombre" />
-              </div>
-              <div class="form-group">
-                <input class="form-control contact__formInput" type="email" placeholder="Correo electrónico" />
-              </div>
-              <div class="form-group">
-                <input class="form-control contact__formInput" type="text" placeholder="Asunto" />
-              </div>
-              <p class="contact__formInfo">Cuéntame más acerca de tu proyecto</p>
-              <div class="form-group">
-                <textarea class="form-control contact__formInput" name="" id="" cols="30" rows="10"
-                  placeholder="Escribe tu respuesta aquí"></textarea>
-              </div>
-              <button class="btn contact__button">ENVIAR MENSAJE</button>
-            </form>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
-  <footer class="footer row d-flex justify-content-center">
-    <div class="col-10">
-      <div class="row text-center">
-        <div class="col-6 col-md-4 justify-content-center">
-          <div class="footer__card card">
-            <div class="card-body">
-              <i class="card__icon fa-solid fa-location-dot"></i>
-              <h5 class="card__title">DIRECCIÓN</h5>
-              <hr class="card__divider" />
-              <p class="mb-0 card__info">23 Loem Ipsum, Lima</p>
+  <div class="general__container">
+    <footer class="footer row d-flex justify-content-center">
+      <div class="col-10">
+        <div class="row text-center">
+          <div class="col-12 col-md-4 justify-content-center">
+            <div class="footer__card card">
+              <div class="card-body">
+                <i class="card__icon fa-solid fa-location-dot"></i>
+                <h5 class="card__title">DIRECCIÓN</h5>
+                <hr class="card__divider" />
+                <p class="mb-0 card__info">Lorem Ipsum, Lima</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-6 col-md-4 justify-content-center">
-          <div class="footer__card card">
-            <div class="card-body">
-              <i class="card__icon fa-solid fa-mobile-screen"></i>
-              <h5 class="card__title">TELÉFONO</h5>
-              <hr class="card__divider" />
-              <p class="mb-0 card__info">+51 999 999 999</p>
+          <div class="col-12 col-md-4 justify-content-center">
+            <div class="footer__card card">
+              <div class="card-body">
+                <i class="card__icon fa-solid fa-mobile-screen"></i>
+                <h5 class="card__title">TELÉFONO</h5>
+                <hr class="card__divider" />
+                <p class="mb-0 card__info">+51 999 999 999</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-4 justify-content-center">
-          <div class="footer__card card">
-            <div class="card-body">
-              <i class="card__icon fa-solid fa-paper-plane"></i>
-              <h5 class="card__title">CORREO</h5>
-              <hr class="card__divider" />
-              <p class="mb-0 card__info">info@velazco.com.pe</p>
+          <div class="col-12 col-md-4 justify-content-center">
+            <div class="footer__card card">
+              <div class="card-body">
+                <i class="card__icon fa-solid fa-paper-plane"></i>
+                <h5 class="card__title">CORREO</h5>
+                <hr class="card__divider" />
+                <p class="mb-0 card__info">info@velazco.com</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-10 mb-4">
-      <div class="row">
-        <div class="col-12 col-md-8">
-          <p class="footer__copyText text-center text-md-left">
-            &copy; Copyright 2022, Leydi Velazco. Todos los derechos
-            reservados.
-          </p>
-        </div>
-        <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end">
-          <div class="footer__media footer__yt">
-            <i class="fa-brands fa-youtube"></i>
+      <div class="col-10 mb-4">
+        <div class="row align-items-end">
+          <div class="col-12 col-md-8">
+            <p class="footer__copyText mb-0 text-center text-md-left">
+              &copy; Copyright 2022, Leydi Velazco. Todos los derechos
+              reservados. <span class="d-none d-md-inline"> Imágenes: Unsplash </span>  
+            </p>
           </div>
-          <div class="footer__media footer__ig">
-            <i class="fa-brands fa-instagram"></i>
+          <div class="col-12 d-flex d-md-none justify-content-center">
+            <p class="footer__copyText text-center">Imágenes: Unsplash</p>
           </div>
-          <div class="footer__media footer__tw">
-            <i class="fa-brands fa-twitter"></i>
-          </div>
-          <div class="footer__media footer__fb">
-            <i class="fa-brands fa-facebook-f"></i>
+          <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end">
+            <div class="footer__media footer__yt">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="footer__media footer__ig">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="footer__media footer__tw">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="footer__media footer__fb">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
 
   <!-- <div class="row">
@@ -608,6 +629,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"></script>
-</body>
+    <script src="./js/app.js"></script>
+    </body>
 
 </html>
