@@ -2,33 +2,84 @@
 
 /* Header */
 .header {
-  height: 3.5rem;
+  height: 6.1875rem;
+  height: 99px;
   background-color: transparent;
 }
+
+@media(max-width: 767.98px) {
+  .header {
+    height: 56px;
+  }
+
+  .navbar__container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: baseline;
+    background-color: #000000f2;
+    padding-left: 0;
+    padding-right: 0;
+    backdrop-filter: blur(4px);
+  }
+
+  #buttonNavbarMobile.navbar__toggler {
+    margin-right: 1rem;
+    border-color: transparent;
+  }
+
+  .nav__invisible {
+    visibility: visible;
+  }
+
+  .collapsing {
+    position: relative;
+    height: 56px;
+    overflow: hidden;
+    transition: height .4s ease-in-out !important;
+  }
+
+  .collapsing:hover {
+    color: var(--tertiary);
+  }
+}
+
+@media(min-width: 768px) {
+  #buttonNavbarDesktop.navbar__toggler {
+    border-color: transparent;
+  }
+
+  .nav__invisible {
+    visibility: hidden;
+  }
+
+  .collapsing {
+    position: relative;
+    height: 99px;
+    overflow: hidden;
+    transition: height .4s ease-in-out !important;
+  }
+
+  .collapsing:hover {
+    color: var(--tertiary);
+  }
+}
+
 
 /* Nav */
 .nav__container {
   gap: 1.5rem;
 }
 
-.nav__container .nav__item .nav__link {
-  color: var(--headline);
-  font: var(--nav-desktop);
-  text-transform: uppercase;
-  /* text-decoration: dashed; */
-}
-
-.nav__link::after {
-  content: '';
-  display: block;
-  margin: 0 auto;
-  margin-top: .25rem;
-  width: 2rem;
-  border: 1px dashed var(--headline);
-}
-
 .nav__item:hover {
   color: var(--tertiary);
+}
+
+.nav__container .nav__item .nav__link {
+  color: var(--headline);
+  color: black;
+  font: var(--nav-desktop);
+  text-transform: uppercase;
 }
 
 .nav__container .nav__item .nav__link:hover {
@@ -37,12 +88,19 @@
 
 .nav__icon {
   font-size: var(--nav-icon);
+  text-decoration-style: none;
 }
+
 .nav__icon:hover {
   color: var(--tertiary);
 }
 
-.nav__link::after:hover {
-  content: '';
-  border: 1px dashed var(--tertiary);
+.nav__text {
+  text-decoration: underline dashed var(--main) 1px;
+  text-underline-offset: 5px;
+  line-height: 1;
+}
+
+.nav__text:hover {
+  text-decoration: underline dashed var(--tertiary) 1px;
 }

@@ -13,8 +13,8 @@
 
   .information__image {
     background-color: var(--background-two);
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     object-fit: contain;
   }
 
@@ -128,7 +128,7 @@
 
   .information__description {
     color: var(--secondary);
-    font-size: 1.5rem;
+    font: var(--text-desktop);
     margin: 1.5rem 0;
     text-align: justify;
   }
@@ -144,11 +144,12 @@
 
   .education__imageContainer {
     background-color: var(--secondary);
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
   }
 
   .education__imageContainer:hover {
@@ -156,8 +157,8 @@
   }
 
   .education__image {
-    width: 120px;
-    height: 120px;
+    width: 90%;
+    height: 70%;
     object-fit: cover;
     cursor: pointer;
   }
@@ -292,13 +293,14 @@
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
-  
+
   .skills__description {
     font: var(--text-mobile);
     text-align: justify;
     color: var(--secondary);
+    margin-bottom: 2rem;
   }
-  
+
   .skills__name {
     font: var(--text-mobile);
     font-family: Montserrat, serif;
@@ -314,13 +316,13 @@
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
-  
+
   .skills__description {
     font: var(--text-tablet);
     text-align: justify;
     color: var(--secondary);
   }
-  
+
   .skills__name {
     font: var(--text-tablet);
     font-family: Montserrat, serif;
@@ -336,13 +338,13 @@
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
-  
+
   .skills__description {
     font: var(--text-desktop);
     text-align: justify;
     color: var(--secondary);
   }
-  
+
   .skills__name {
     font: var(--text-desktop);
     font-family: Montserrat, serif;
@@ -486,64 +488,193 @@
 /********************************/
 
 
+@media (max-width: 767.98px) {
+  .progress__wrapper {
+    margin-bottom: 30px;
+  }
 
-.progress__wrapper {
-  margin-bottom: 30px;
+  .progress__title {
+    color: var(--headline);
+  }
+
+  .progress__container {
+    height: 10px;
+    box-shadow: none;
+    background-color: var(--main);
+    overflow: visible;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+
+  .progress__bar {
+    box-shadow: none;
+    line-height: none;
+    line-height: 1.2;
+    color: var(--button);
+    font-weight: 500;
+    text-align: right;
+    position: relative;
+    overflow: visible;
+    border-radius: 30px;
+
+    float: left;
+    height: 100%;
+    font-size: 12px;
+    transition: width 0.6s ease 0s;
+  }
+
+  .progress__bar.progress__background {
+    background-color: var(--button);
+  }
+
+  .progress__bar::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+
+  .progress__bar.progress__background::after {
+    background-color: #9577ee;
+  }
+
+  .progress__bar span {
+    position: absolute;
+    top: -34px;
+    right: 0;
+    color: var(--button);
+
+    font-size: 14px;
+  }
 }
 
-.progress__title {
-  color: var(--headline);
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .progress__wrapper {
+    margin-bottom: 30px;
+  }
+
+  .progress__title {
+    color: var(--headline);
+  }
+
+  .progress__container {
+    height: 15px;
+    box-shadow: none;
+    background-color: var(--main);
+    overflow: visible;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+
+  .progress__bar {
+    box-shadow: none;
+    line-height: none;
+    line-height: 1.2;
+    color: var(--button);
+    font-weight: 500;
+    text-align: right;
+    position: relative;
+    overflow: visible;
+    border-radius: 30px;
+
+    float: left;
+    height: 100%;
+    font-size: 12px;
+    transition: width 0.6s ease 0s;
+  }
+
+  .progress__bar.progress__background {
+    background-color: var(--button);
+  }
+
+  .progress__bar::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+  }
+
+  .progress__bar.progress__background::after {
+    background-color: #9577ee;
+  }
+
+  .progress__bar span {
+    position: absolute;
+    top: -34px;
+    right: 0;
+    color: var(--button);
+
+    font-size: 16px;
+  }
+
 }
 
-.progress__container {
-  height: 20px;
-  box-shadow: none;
-  background-color: var(--main);
-  overflow: visible;
-  border-radius: 30px;
-  margin-bottom: 20px;
-}
+@media(min-width: 1200px) {
+  .progress__wrapper {
+    margin-bottom: 30px;
+  }
 
-.progress__bar {
-  box-shadow: none;
-  line-height: none;
-  line-height: 1.2;
-  color: var(--button);
-  font-weight: 500;
-  text-align: right;
-  position: relative;
-  overflow: visible;
-  border-radius: 30px;
+  .progress__title {
+    color: var(--headline);
+  }
 
-  float: left;
-  height: 100%;
-  font-size: 12px;
-  transition: width 0.6s ease 0s;
-}
+  .progress__container {
+    height: 20px;
+    box-shadow: none;
+    background-color: var(--main);
+    overflow: visible;
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
 
-.progress__bar.progress__background {
-  background-color: var(--button);
-}
+  .progress__bar {
+    box-shadow: none;
+    line-height: none;
+    line-height: 1.2;
+    color: var(--button);
+    font-weight: 500;
+    text-align: right;
+    position: relative;
+    overflow: visible;
+    border-radius: 30px;
 
-.progress__bar::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  right: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-}
+    float: left;
+    height: 100%;
+    font-size: 12px;
+    transition: width 0.6s ease 0s;
+  }
 
-.progress__bar.progress__background::after {
-  background-color: #9577ee;
-}
+  .progress__bar.progress__background {
+    background-color: var(--button);
+  }
 
-.progress__bar span {
-  position: absolute;
-  top: -34px;
-  right: 0;
-  color: var(--button);
+  .progress__bar::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
 
-  font-size: 18px;
+  .progress__bar.progress__background::after {
+    background-color: #9577ee;
+  }
+
+  .progress__bar span {
+    position: absolute;
+    top: -34px;
+    right: 0;
+    color: var(--button);
+
+    font-size: 18px;
+  }
+
 }

@@ -6,45 +6,42 @@
     background-color: var(--background);
     padding: 2rem 0;
   }
-  
-  .contact__container {
-  }
-  
+
   .contact__title {
     color: var(--headline);
     text-transform: uppercase;
     font: var(--title-mobile);
   }
-  
+
   .contact__subtitle {
     color: var(--paragraph);
     font: var(--subtitle-mobile);
     margin-bottom: 3rem;
   }
-  
+
   .contact__formMessage {
     color: var(--headline);
   }
-  
+
   .contact__formInfo {
     color: var(--headline);
   }
-  
+
   .contact__formInput {
     border-radius: 0;
   }
-  
+
   .contact__formInput:focus {
     box-shadow: none;
     border-color: var(--main);
   }
-  
+
   .contact__button {
     background-color: var(--button);
     color: var(--button-text);
     border-radius: 0;
   }
-  
+
   .contact__button:hover {
     background-color: var(--button-hover);
     color: var(--button-text);
@@ -57,44 +54,45 @@
     background-color: var(--background);
     padding: 2rem 0;
   }
-  
+
   .contact__container {
+    margin-right: 40px;
   }
-  
+
   .contact__title {
     color: var(--headline);
     text-transform: uppercase;
     font: var(--title-tablet)
   }
-  
+
   .contact__subtitle {
     color: var(--paragraph);
     font: var(--subtitle-tablet)
   }
-  
+
   .contact__formMessage {
     color: var(--headline);
   }
-  
+
   .contact__formInfo {
     color: var(--headline);
   }
-  
+
   .contact__formInput {
     border-radius: 0;
   }
-  
+
   .contact__formInput:focus {
     box-shadow: none;
     border-color: var(--main);
   }
-  
+
   .contact__button {
     background-color: var(--button);
     color: var(--button-text);
     border-radius: 0;
   }
-  
+
   .contact__button:hover {
     background-color: var(--button-hover);
     color: var(--button-text);
@@ -107,46 +105,47 @@
     background-color: var(--background);
     padding: 2rem 0;
   }
-  
+
   .contact__container {
+    margin-right: 40px;
   }
-  
+
   .contact__title {
     color: var(--headline);
     text-transform: uppercase;
     font: var(--title-desktop)
   }
-  
+
   .contact__subtitle {
     color: var(--paragraph);
     font: var(--subtitle-desktop)
   }
-  
+
   .contact__formMessage {
     color: var(--headline);
     font: var(--subtitle-desktop);
   }
-  
+
   .contact__formInfo {
     color: var(--headline);
     font: var(--text-desktop);
   }
-  
+
   .contact__formInput {
     border-radius: 0;
   }
-  
+
   .contact__formInput:focus {
     box-shadow: none;
     border-color: var(--main);
   }
-  
+
   .contact__button {
     background-color: var(--button);
     color: var(--button-text);
     border-radius: 0;
   }
-  
+
   .contact__button:hover {
     background-color: var(--button-hover);
     color: var(--button-text);
