@@ -3,9 +3,7 @@
 /* Hero */
 .hero {
   height: 100vh;
-  background-image: url(../assets/images/profile.png);
-  background-image: url(../assets/images/profile-7.jpg);
-  background-image: url(../assets/images/profile-15.gif);
+  background-image: url(../assets/images/profile.gif);
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
@@ -29,8 +27,6 @@
   position: relative;
   padding: 2rem;
   background-color: var(--background-five);
-  /* backdrop-filter: blur(10px); */
-  /* backdrop-filter: grayscale(1); */
 }
 
 .hero__content {
@@ -42,7 +38,6 @@
   color: var(--headline);
   font: var(--big-title-desktop);
   text-transform: uppercase;
-
 }
 
 .hero__firstName {
