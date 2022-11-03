@@ -4,7 +4,8 @@
 .hero {
   height: 100vh;
   background-image: url(../assets/images/profile.png);
-  background-image: url(../assets/images/profile-2.jpg);
+  background-image: url(../assets/images/profile-7.jpg);
+  background-image: url(../assets/images/profile-15.gif);
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
@@ -19,25 +20,34 @@
 .hero__container {
   backdrop-filter: grayscale(1);
   background-color: #242629cf;
+
+
+  background-color: #2426299f;
 }
 
 .hero__wrapper {
   position: relative;
   padding: 2rem;
+  background-color: var(--background-five);
   /* backdrop-filter: blur(10px); */
   /* backdrop-filter: grayscale(1); */
+}
+
+.hero__content {
+  height: 240px;
 }
 
 .hero__firstName,
 .hero__lastName {
   color: var(--headline);
-  text-transform: uppercase;
   font: var(--big-title-desktop);
+  text-transform: uppercase;
+
 }
 
 .hero__firstName {
   position: relative;
-  left: 2rem;
+  left: 3rem;
   margin: 0;
 }
 
@@ -47,19 +57,25 @@
 }
 
 .hero__firstName span {
-  color: var(--highlight);
+  color: var(--headline);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--headline);
 }
 
 .hero__lastName span {
-  color: var(--tertiary);
+  color: var(--headline);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--headline);
 }
 
 .hero__subtitle {
-  color: var(--paragraph);
+  color: var(--headline-two);
   text-transform: uppercase;
   font: var(--big-subtitle-desktop);
   position: relative;
-  left: 4rem;
+  left: 2rem;
   bottom: 3rem;
   letter-spacing: .125rem;
 }
@@ -76,7 +92,7 @@
 
   .hero__subtitle {
     font: var(--big-subtitle-tablet);
-    left: 2rem;
+    left: 1rem;
   }
 }
 
@@ -89,7 +105,7 @@
 
   .hero__wrapper {
     padding: 2rem;
-    background-color: var(--background-two);
+    background-color: var(--background-five);
   }
 
   .hero__content {
@@ -103,7 +119,7 @@
 
   .hero__subtitle {
     font: var(--big-subtitle-tablet);
-    left: 2rem;
+    left: 1rem;
   }
 
 }
@@ -120,7 +136,7 @@
 
   .hero__wrapper {
     padding: 2rem;
-    background-color: var(--background-two);
+    background-color: var(--background-five);
   }
 
   .hero__content {
@@ -134,7 +150,7 @@
 
   .hero__subtitle {
     font: var(--big-subtitle-mobile);
-    left: 2rem;
+    left: .5rem;
   }
 
 }

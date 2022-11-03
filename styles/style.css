@@ -10,49 +10,57 @@
   /* Color */
   --background: #16161a;
   --background-two: #242629;
+  --background-three: #5a28f12a;
+  --background-four: #2426295e;
+  --background-five: #9a7df035;
   --paragraph: #94a1b2;
   --headline: #fffffe;
-  --button: #7f5af0;
-  --button-hover: #5a28f1;
+  --headline-two: #d2c9dc;
+  --button: #c2b1f6;
+  --button-hover: #a48af2;
   --button-text: #fffffe;
   --stroke: #010101;
   --main: #fffffe;
-  --highlight: #7f5af0;
+  --highlight: #997bf3;
   --secondary: #72757e;
   --tertiary: #2cb67d;
+  --quaternary: ##b8c1ec;
 
   /* Font */
   --baseFont: 'Poppins', sans-serif;
 
   /* Text styles */
-  --big-title-desktop: 800 5rem var(--baseFont);
-  --big-subtitle-desktop: 500 2rem var(--baseFont);
+  --big-title-desktop: 700 5rem var(--baseFont);
+  --big-subtitle-desktop: 500 1.25rem var(--baseFont);
   --title-desktop: 600 3rem var(--baseFont);
   --subtitle-desktop: 600 1.875rem var(--baseFont);
   --heading-desktop: 500 1.5rem var(--baseFont);
   --text-desktop: 300 1.25rem var(--baseFont);
-  --nav-desktop: 400 1rem var(--baseFont);
+  --text-info-desktop: 300 1.125rem var(--baseFont);
+  --nav-desktop: 400 .875rem var(--baseFont);
   --nav-section-desktop: 400 .9375rem var(--baseFont);
-  --nav-icon: 1.25rem;
+  --nav-icon: 1rem;
   --footer-desktop: 300 1rem var(--baseFont);
 
-  --big-title-tablet: 800 4.5rem var(--baseFont);
-  --big-subtitle-tablet: 500 1.5rem var(--baseFont);
+  --big-title-tablet: 700 4.5rem var(--baseFont);
+  --big-subtitle-tablet: 500 1.25rem var(--baseFont);
   --title-tablet: 600 2.5rem var(--baseFont);
   --subtitle-tablet: 600 1.5rem var(--baseFont);
   --heading-tablet: 500 1.25rem var(--baseFont);
   --text-tablet: 300 1.25rem var(--baseFont);
+  --text-info-tablet: 300 1.125rem var(--baseFont);
   --nav-tablet: 400 .75rem var(--baseFont);
   --nav-section-tablet: 400 .875rem var(--baseFont);
-  --nav-icon: 1.25rem;
+  --nav-icon: 1rem;
   --footer-tablet: 300 .875rem var(--baseFont);
 
-  --big-title-mobile: 800 3.5rem var(--baseFont);
-  --big-subtitle-mobile: 500 1.25rem var(--baseFont);
+  --big-title-mobile: 700 3.5rem var(--baseFont);
+  --big-subtitle-mobile: 500 1.125rem var(--baseFont);
   --title-mobile: 600 1.875rem var(--baseFont);
   --subtitle-mobile:600 1.5rem var(--baseFont);
   --heading-mobile: 500 1rem var(--baseFont);
   --text-mobile: 300 1.25rem var(--baseFont);
+  --text-info-mobile: 300 1rem var(--baseFont);
   --nav-mobile: 400 .75rem var(--baseFont);
   --nav-section-mobile: 400 .8125rem var(--baseFont);
   --nav-icon: 1.25rem;
