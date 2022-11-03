@@ -116,7 +116,6 @@
     left: 0;
     right: 0;
     bottom: -1.25rem;
-    /* top: 70px; */
   }
 
   .friend__description {
@@ -203,7 +202,6 @@
     left: 0;
     right: 0;
     bottom: -1.25rem;
-    /* top: 70px; */
   }
 
   .friend__description {
@@ -214,6 +212,7 @@
     padding: 0;
     text-align: justify;
   }
+
   .friend__description span {
     font-weight: 500;
   }

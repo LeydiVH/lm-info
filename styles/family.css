@@ -81,8 +81,6 @@
 .family__gallery>.family__picture {
   background-color: var(--secondary);
   text-align: center;
-  /* border-radius: .5rem; */
-  /* padding: 40px; */
 }
 
 .family__picture {

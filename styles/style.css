@@ -57,7 +57,7 @@
   --big-title-mobile: 700 3.5rem var(--baseFont);
   --big-subtitle-mobile: 500 1.125rem var(--baseFont);
   --title-mobile: 600 1.875rem var(--baseFont);
-  --subtitle-mobile:600 1.5rem var(--baseFont);
+  --subtitle-mobile: 600 1.5rem var(--baseFont);
   --heading-mobile: 500 1rem var(--baseFont);
   --text-mobile: 300 1.25rem var(--baseFont);
   --text-info-mobile: 300 1rem var(--baseFont);
@@ -126,4 +126,3 @@ h6 {
     background-color: var(--background-two);
   }
 }
-

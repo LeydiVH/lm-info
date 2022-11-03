@@ -1,6 +1,7 @@
 @import "./style.css";
 
 @media (max-width: 767.98px) {
+
   /* Footer */
   .footer {
     background-color: var(--background);
@@ -81,6 +82,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
+
   /* Footer */
   .footer {
     background-color: var(--background);
@@ -160,6 +162,7 @@
 }
 
 @media (min-width: 1200px) {
+
   /* Footer */
   .footer {
     background-color: var(--background);

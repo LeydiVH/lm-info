@@ -96,7 +96,7 @@
     width: 80%;
     height: 500px;
   }
-  
+
   .information__image {
     position: relative;
     top: 10%;
@@ -106,7 +106,7 @@
     height: 80%;
     object-fit: cover;
   }
-  
+
   .information__image:hover {
     cursor: pointer;
     background-color: var(--button-hover);
